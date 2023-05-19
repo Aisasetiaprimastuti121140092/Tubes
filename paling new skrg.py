@@ -76,9 +76,9 @@ class Player(pygame.sprite.Sprite):
     def update(self):
         key = pygame.key.get_pressed()
         if not self.slippery :
-            if key[pygame.K_RIGHT] and self.rect.right < 550:
+            if key[pygame.K_RIGHT] and self.rect.right < 680:
                 self.rect.move_ip(self.speed, 0)
-            if key[pygame.K_LEFT] and self.rect.left > 45:
+            if key[pygame.K_LEFT] and self.rect.left > 100:
                 self.rect.move_ip(-self.speed, 0)
         else:
              # Logika pergerakan player saat efek slippery aktif
